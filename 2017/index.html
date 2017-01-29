@@ -46,21 +46,59 @@
                           <a href="#schedule">Schedule</a>
                       </li>
                   </ul>
-                  <a href="https://getuikit.com/v2/docs/layouts_frontpage.html#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+                  <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
                   <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Lucky's</div>
               </nav>
+
+<!--
+              <div id="offcanvas" uk-offcanvas>
+                  <div class="uk-offcanvas-bar">
+                      <ul class="uk-nav uk-nav-offcanvas">
+                        <li class="uk-active"> <a href="#home">Home</a> </li>
+                        <li> <a href="#concord" class="uk-offcanvas-close">Concord</a> </li>
+                        <li><a href="#portsmouth" class="uk-offcanvas-close">Portsmouth</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                      </ul>
+                  </div>
+              </div>
+-->
+<div id="offcanvas" class="uk-offcanvas">
+           <div class="uk-offcanvas-bar">
+               <ul class="uk-nav uk-nav-offcanvas">
+                   <li class="uk-active">
+                       <a href="layouts_frontpage.html">Frontpage</a>
+                   </li>
+
+                   <li><a href="#portsmouth" onclick="jQuery.UIkit.offcanvas.hide();" data-uk-smooth-scroll="{offset:130}">Portsmouth</a></li>
+
+                   <li>
+                       <a href="layouts_blog.html">Blog</a>
+                   </li>
+                   <li>
+                       <a href="layouts_documentation.html">Documentation</a>
+                   </li>
+                   <li>
+                       <a href="layouts_contact.html">Contact</a>
+                   </li>
+                   <li>
+                       <a href="layouts_login.html">Login</a>
+                   </li>
+               </ul>
+           </div>
+       </div>
+
 
             <div class="uk-grid" data-uk-grid-margin="" id="home">
                 <div class="uk-width-medium-1-1 uk-row-first">
 
                     <div class="uk-vertical-align uk-text-center" style="background: url('pix/7barbers.jpg') 50% 0 no-repeat; height: 450px;">
                         <div class="uk-vertical-align-middle uk-width-1-2">
-                            <h1 class="uk-heading-large uk-button">Lucky's Barbershop</h1>
+                            <h1 class="uk-heading-huge uk-button">Lucky's Barbershop</h1>
 
                             <p>
-                                <a class="uk-button uk-button-primary uk-button-large" href="">Concord, NH (N. State St)</a>
+                                <a class="uk-button uk-button-primary uk-button-large" href="#concord">Concord, NH (N. State St)</a>
                                 <br>
-                                <a class="uk-button uk-button-large" href="">Portsmouth (Feb, 2017)</a>
+                                <a class="uk-button uk-button-large" href="#portsmouth">Portsmouth (Feb, 2017)</a>
                             </p>
                         </div>
                     </div>
@@ -227,5 +265,6 @@
                             </figure>
                         </div>
                     </div>
+
 
 </body></html>
