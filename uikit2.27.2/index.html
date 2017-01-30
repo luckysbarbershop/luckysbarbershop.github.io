@@ -5,14 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Lucky's</title>
 
-        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/uikit.css" />
         <link rel="stylesheet" href="css/uikit.gradient.min.css" />
+        <!-- <link rel="stylesheet" href="http://getuikit.com/assets/uikit/dist/css/uikit.css" /> -->
 
         <script
           src="https://code.jquery.com/jquery-3.1.1.min.js"
           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
           crossorigin="anonymous"></script>
-        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit.js"></script>
         <script src="js/addons/sticky.js"></script>
 
         <link rel="shortcut icon" href="pix/favicon.ico" type="image/x-icon">
@@ -21,13 +22,7 @@
     </head>
 
     <body>
-
       <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
-
-
-
-
-
 
         <nav class="uk-navbar uk-margin-large-bottom" data-uk-sticky="{boundary:'#define-an-offset'}" style="margin: 0px;">
           <a class="uk-navbar-brand uk-hidden-small" href="http://luckysbarbershop.biz">Lucky's</a>
@@ -56,11 +51,13 @@
                  </div>
              </div>
 
+            <div class="uk-grid uk-active"
+>
 
-            <div class="uk-grid" id="home">
-              <div class="uk-width-medium-1-1 uk-row-first ">
-
-                <div class="uk-vertical-align uk-text-center uk-cover" style="background: url('pix/7barbers.jpg') 50% 0 no-repeat; height: 450px;">
+              <div class="uk-width-medium-1-1 uk-row-first uk-vertical-align uk-text-center uk-cover ">
+                <div class="uk-background-fixed uk-background-center-center uk-height-medium uk-width-large"
+                  style="background-image: url(pix/testwide.jpg);"
+                  id="home">
 
                   <div class="uk-vertical-align-middle uk-width-1-2">
                     <img  src="pix/header.jpg" alt="">
@@ -100,13 +97,7 @@
 
 
 
-            <div class="uk-active">
-              <div class="uk-background-fixed uk-background-center-center uk-height-medium uk-width-large" style="background-image: url(pix/testwide.jpg);">
-              <h1>TEXT to test? Needed?</h1>
-              <br><br><br><br><br><br>
-              <h1>More text<h1>
-              </div>
-            </div>
+
 
 
 
