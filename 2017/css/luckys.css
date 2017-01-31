@@ -1,0 +1,8 @@
+/*
+ * Overriding margin as it shifts everything left
+ */
+ 
+.uk-grid {
+  /* 1 */
+  margin: 0 0 0 0px;
+}
