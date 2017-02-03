@@ -1,225 +1,199 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0051)https://sites.google.com/site/luckysbarbershop/home -->
-<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<script async="" src="./home_files/analytics.js"></script><script type="text/javascript">/* Copyright 2008 Google. */ (function() { (function(){function e(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(h){}};this.tick("start",null,a)}var a,d;window.performance&&(d=(a=window.performance.timing)&&a.responseStart);var f=0<d?new e(d):new e;window.jstiming={Timer:e,load:f};if(a){var c=a.navigationStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick("_wtsrt",void 0,c),b.tick("wtsrt_","_wtsrt",d),
-b.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick("_tbnd",void 0,window.chrome.csi().startE),b.tick("tbnd_","_tbnd",c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick("_tbnd",void 0,window.external.startE),b.tick("tbnd_","_tbnd",c))),a&&(window.jstiming.pt=a)}catch(g){}})(); })()
-</script>
-<link rel="shortcut icon" href="https://sites.google.com/site/luckysbarbershop/_/rsrc/1295526547273/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/015e60/system/app/images/apple-touch-icon.png" type="image/png">
-<script type="text/javascript">/* Copyright 2008 Google. */ (function() { function d(a){return document.getElementById(a)}window.byId=d;function g(a){return a.replace(/^\s+|\s+$/g,"")}window.trim=g;var h=[],k=0;window.JOT_addListener=function(a,b,c){var f=new String(k++);a={eventName:a,handler:b,compId:c,key:f};h.push(a);return f};window.JOT_removeListenerByKey=function(a){for(var b=0;b<h.length;b++)if(h[b].key==a){h.splice(b,1);break}};window.JOT_removeAllListenersForName=function(a){for(var b=0;b<h.length;b++)h[b].eventName==a&&h.splice(b,1)};
-window.JOT_postEvent=function(a,b,c){var f={eventName:a,eventSrc:b||{},payload:c||{}};if(window.JOT_fullyLoaded)for(b=h.length,c=0;c<b&&c<h.length;c++){var e=h[c];e&&e.eventName==a&&(f.listenerCompId=e.compId||"",(e="function"==typeof e.handler?e.handler:window[e.handler])&&e(f))}else window.JOT_delayedEvents.push({eventName:a,eventSrc:b,payload:c})};window.JOT_delayedEvents=[];window.JOT_fullyLoaded=!1;
-window.JOT_formatRelativeToNow=function(a,b){a=((new Date).getTime()-a)/6E4;if(1440<=a||0>a)return null;var c=0;60<=a&&(a/=60,c=2);2<=a&&c++;return b?window.JOT_siteRelTimeStrs[c].replace("__duration__",Math.floor(a)):window.JOT_userRelTimeStrs[c].replace("__duration__",Math.floor(a))}; })()
-</script>
-<script>
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://getuikit.com/v2/docs/layouts_frontpage.html -->
+<html lang="en-gb" dir="ltr" class="uk-notouch">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucky's</title>
+
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/uikit.gradient.min.css" />
+    <link rel="stylesheet" href="css/luckys.css" />
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/addons/sticky.js"></script>
+
+    <link rel="shortcut icon" href="pix/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="https://getuikit.com/v2/docs/images/apple-touch-icon.png">
+
+</head>
+
+<body style="background-image: url('pix/brush.jpg');
+      background-size: 100% auto;
+      background-attachment: fixed;">
+
+    <div class="uk-container uk-container-center">
+
+        <nav class="uk-navbar" data-uk-sticky="{boundary:'#define-an-offset'}" style="margin: 0px;">
+            <a class="uk-navbar-brand uk-hidden-small" href="http://luckysbarbershop.biz">Lucky's</a>
+            <ul class="uk-navbar-nav uk-hidden-small">
+                <li class="uk-active"><a href="#home">Home</a></li>
+                <li><a href="#concord">Concord</a></li>
+                <li><a href="#portsmouth">Portsmouth</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+            </ul>
+
+            <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+            <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Lucky's</div>
+
+        </nav>
+
+        <div class="anchor uk-margin uk-width-2-3 uk-container-center uk-text-center" id="home">
+          <img style="background: black;" src="pix/header.jpg" alt="Lucky's Barbershop & Shave Parlor">
+        </div>
+
+        <div class="uk-marin uk-width-1-1 uk-container-center uk-text-center">
+            <a class="uk-button uk-button-large" href="#concord">Concord, NH (N. State St)</a>
+            <br>
+            <a class="uk-margin uk-button uk-button-large" href="#portsmouth">Portsmouth (Feb, 2017)</a>
+        </div>
+
+        <div class="anchor uk-grid uk-panel-box" id="concord">
+
+            <div class="uk-width-medium-1-3 uk-row-first">
+                <img width="250" height="250" src="pix/concord_bw.jpg" alt="">
+            </div>
+
+            <div class="uk-width-medium-2-3">
+                <h1>Lucky's Concord</h1>
+                <a href="https://www.google.com/maps/place/Luckys+Barbershop/@43.2000938,-71.5352785">
+                  50 South State St. Concord, NH 03301
+                </a>
+                <p> 603-715-5470 </p>
+
+                <p>This is a real-deal traditional barbershop.</p>
+                <p>We have stood the test of time and stayed true to our roots.</p>
+                <p>Day after day loyal men are maintaining their faith in our shop and new faces are always appearing with a breath of refreshment and the smell of bay rum in the air.</p>
+            </div>
+
+        </div>
+
+        <hr class="uk-grid-divider">
+
+        <div class="anchor uk-grid uk-panel-box" id="portsmouth">
+
+            <div class="uk-width-medium-1-3">
+                <img width="250" height="250" src="pix/portsmouth.jpg" alt="">
+            </div>
+
+            <div class="uk-width-medium-2-3 uk-row-first">
+                <h1>Lucky's Portsmouth</h1>
+                <p>
+                    We are excited to announce that we will be part of a very special experience opening soon in Portsmouth NH. Lucky's will be offering our services in a small and unique environment within <a href="http://www.papawolfsupplyco.com/">@papawolfsupplyco</a>                    We will be providing our handcrafted services in a mercantile shop that offers high quality small batch products that are carefully crafted with no details spared, and we feel that it's a natural match for the two. Appointments will
+                    be available to book soon, please stay tuned for future updates
+                </p>
+            </div>
+
+
+        </div>
+
+        <hr class="uk-grid-divider">
+
+        <div class="anchor uk-grid uk-panel-box" id="schedule">
+
+            <div class="uk-width-medium-1-3 uk-row-first">
+                <img width="250" height="250" src="pix/whiteboard.jpg" alt="">
+            </div>
+
+            <div class="uk-width-medium-2-3">
+                <h1>Schedule</h1>
+                <h2>Concord</h2> Lucky's Concord is currently first-come first-serve walkin service.
+
+
+                <table class="uk-table">
+                    <caption>Concord Hours</caption>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>7am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>7am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>7am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>7am - 7pm</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>7am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>7am - 12pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>9am - 2pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Portsmouth</h2> Lucky's Portsmouth will be appointment only.
+                <a class="uk-button" href="http://luckysbarbershop.appointy.com/">Schedule an Appointment</a>
+                </p>
+            </div>
+
+        </div>
 
 
 
-  var breadcrumbs = [{"path":"/site/luckysbarbershop/home","deleted":false,"title":"home","dir":"ltr"}];
-  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/015e60/system/app/images/cleardot.gif';
+        <!-- not happy with this... make a slide show/etc/
+        <div class="uk-grid uk-panel-box" data-uk-grid-margin="">
+          <div class="uk-width-1-1"> <h2>Satisfied Clients</h2> </div>
+          <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-3">
+                  <img width="640" height="640" src="pix/cuts/1.jpg" alt="">
+          </div>
+          <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-3">
+                  <img width="640" height="640" src="pix/cuts/2.jpg" alt="">
+          </div>
+          <div class="uk-width-1-2 uk-width-medium-1-3 uk-width-large-1-3">
+                  <img width="640" height="640" src="pix/cuts/3.jpg" alt="">
+          </div>
+        </div>
+<-->
+
+        <div class="uk-grid uk-panel-box tm-footer">
+
+            <div class="uk-width-large-1-3 uk-width-small-1-1">
+                <i class="uk-icon-button uk-icon-medium uk-icon-map-marker"></i>
+                <a href="https://www.google.com/maps/place/Luckys+Barbershop/@43.2000938,-71.5352785">
+                  50 South State St. Concord, NH 03301
+                </a>
+            </div>
+
+            <div class="uk-width-large-1-3 uk-width-small-1-1">
+                <i class="uk-icon-button uk-icon-medium uk-icon-phone"></i> 603-715-5470
+            </div>
+            <div class="uk-width-large-1-3 uk-width-small-1-1">
+                <i class="uk-icon-button uk-icon-medium uk-icon-facebook"></i>
+                <a href="https://www.facebook.com/luckysbarbershopandshaveparlor">Lucky's Barber Shop</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="offcanvas" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
 
 
-  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+            <ul class="uk-nav uk-nav-offcanvas" data-uk-nav=''>
+                <li><a href="#home" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Home</a></li>
+                <li><a href="#concord" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Concord</a></li>
+                <li><a href="#portsmouth" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Portsmouth</a></li>
+                <li><a href="#schedule" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Schedule</a></li>
 
+            </ul>
+        </div>
+    </div>
 
+    </body>
 
-
-
-
-  var webspace = {"enableAnalytics":true,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED","siteTitle":"Lucky\u0027s Barbershop and Shave Parlor","adsensePublisherId":null,"features":{"validateClientGvizDataSourceUrls":true,"contactStoreMigrationPollForGapi":true,"gapiLoaderUtil":true,"moreMobileStyleImprovements":true,"accumulativeBubblePanelCreation":true,"oAuthForChartsApi":true,"batchFileCabinetOperations":true,"fileCabinetScreenReaderFix":true,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":true,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://accounts.google.com/AccountChooser?continue\u003dhttps://sites.google.com/site/luckysbarbershop/home\u0026service\u003djotspot","analyticsAccountId":"UA-10607192-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/015e60/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/015e60/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/015e60/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/015e60/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/015e60/system/app/css/trogedit.css","/site/luckysbarbershop/_/rsrc/1484211112000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/015e60/system/app/css/codeeditor.css","/site/luckysbarbershop/_/rsrc/1484211112000/system/app/css/camelot/editor-jfk.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"defaultdomain","baseUri":"/site/luckysbarbershop","name":"luckysbarbershop","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":null,"parentWuid":null,"siteLocale":"en","timeZone":"America/New_York","type":"text","title":"home","locale":"en","wuid":"wuid:gx:4ea5418f3dabbee6","revision":23,"path":"/home","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"home","canChangePath":false,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/site/luckysbarbershop/system/app/pages/gadgets"}};
-  webspace.page.breadcrumbs = breadcrumbs;
-
-
-  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
-
-</script>
-<script type="text/javascript">
-                window.jstiming.load.tick('scl');
-              </script>
-<link rel="canonical" href="http://www.luckysbarbershop.biz/home">
-<meta name="title" content="Lucky&#39;s Barbershop and Shave Parlor">
-<meta itemprop="name" content="Lucky&#39;s Barbershop and Shave Parlor">
-<meta property="og:title" content="Lucky&#39;s Barbershop and Shave Parlor">
-<meta name="description" content="Lucky&#39;s Barbershop and Shave Parlor">
-<meta itemprop="description" content="Lucky&#39;s Barbershop and Shave Parlor">
-<meta id="meta-tag-description" property="og:description" content="Lucky&#39;s Barbershop and Shave Parlor">
-<style type="text/css">
-</style>
-<link rel="stylesheet" type="text/css" href="./home_files/standard-css-default-ltr-ltr.css">
-<link rel="stylesheet" type="text/css" href="./home_files/overlay.css">
-<link rel="stylesheet" type="text/css" href="./home_files/allthemes-view.css">
-<!--[if IE]>
-          <link rel="stylesheet" type="text/css" href="/site/luckysbarbershop/system/app/css/camelot/allthemes%2die.css" />
-        <![endif]-->
-<title>Lucky's Barbershop and Shave Parlor</title>
-<meta itemprop="image" content="https://sites.google.com/site/luckysbarbershop/_/rsrc/1266500323154/home/Menu%20Bar%20Image.jpg?height=20&amp;width=316">
-<meta property="og:image" content="https://sites.google.com/site/luckysbarbershop/_/rsrc/1266500323154/home/Menu%20Bar%20Image.jpg?height=20&amp;width=316">
-<script type="text/javascript">
-                window.jstiming.load.tick('cl');
-              </script>
-<style></style><script src="./home_files/ga.js"></script></head>
-<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
-
-<div id="sites-page-toolbar" class="sites-header-divider">
-<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
-</div>
-<div id="sites-chrome-everything-scrollbar">
-<div id="sites-chrome-everything" class="">
-<div id="sites-chrome-page-wrapper" style="direction: ltr">
-<div id="sites-chrome-page-wrapper-inside">
-<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
-<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="">
-<tbody><tr class="sites-header-primary-row" id="sites-chrome-userheader">
-<td id="sites-header-title" class="" role="banner" style="height: 238px"><div class="sites-header-cell-buffer-wrapper"><h2></h2></div></td><td class="sites-layout-searchbox  "></td>
-</tr>
-<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
-<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
-</td>
-</tr>
-</tbody></table>
-</div>
-<div id="sites-chrome-main-wrapper">
-<div id="sites-chrome-main-wrapper-inside">
-<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
-<tbody><tr>
-<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left" style="display: none; width: 150px">
-<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotid="navList"><li class="nav-first "><div class="current-bg" jotid="wuid:gx:4ea5418f3dabbee6" dir="ltr" style="padding-left: 5px;">home</div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://sites.google.com/site/luckysbarbershop/directions" jotid="wuid:gx:1317c9435f197043" class="sites-navigation-link">directions</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://sites.google.com/site/luckysbarbershop/hours" jotid="wuid:gx:2ec8e9bfa23b7888" class="sites-navigation-link">hours</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://sites.google.com/site/luckysbarbershop/hours-of-operation" jotid="wuid:gx:63566fee214a7802" class="sites-navigation-link">Hours of Operation</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://sites.google.com/site/luckysbarbershop/news" jotid="wuid:gx:383ca41c4077272a" class="sites-navigation-link">news</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://sites.google.com/site/luckysbarbershop/news-article" jotid="wuid:gx:128b019284c513e8" class="sites-navigation-link">News Article</a></div></li><li class=""><div dir="ltr" style="padding-left: 5px;"><a href="https://sites.google.com/site/luckysbarbershop/system/app/pages/sitemap/hierarchy" jotid="wuid:gx:1816ced4214b2992" class="sites-navigation-link">Sitemap</a></div></li></ul></div></div>
-</td>
-<td id="sites-canvas-wrapper">
-<div id="sites-canvas" role="main">
-<div id="goog-ws-editor-toolbar-container"> </div>
-<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
-</div>
-<div id="sites-canvas-main" class="sites-canvas-main">
-<div id="sites-canvas-main-content">
-<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><center>
-<img border="0" height="20" src="./home_files/Menu Bar Image.jpg" usemap="#map" width="316">
-<map name="map">
-<area coords="0,1,57,19" href="index.html" shape="rect">
-<area coords="67,1,162,19" href="directions.html" shape="rect">
-<area coords="185,0,241,19" href="hours.html" shape="rect">
-<area coords="262,0,316,20" href="news.html" shape="rect">
-</map>
-</center>
-<div style="text-align:center"><span style="font-size:large"><br>
-</span></div>
-
-<!-- Actual Content -->
-
-<div style="text-align:center"><span style="font-size:medium">This is a real-deal traditional barbershop.</span></div>
-<div style="text-align:center"><span style="font-size:medium"><br>
-</span></div>
-<div style="text-align:center"><span style="font-size:medium">We have stood the test of time and stayed true to our roots.</span></div>
-<div style="text-align:center"><span style="font-size:medium"><br>
-</span></div>
-<div style="text-align:center"><span style="font-size:medium">Day after day loyal men are maintaining their faith in our shop and new faces are always appearing with a breath of refreshment and the smell of bay rum in the air.</span></div>
-<div style="text-align:center"><span style="font-size:medium"><br>
-</span></div>
-<div style="text-align:center"><span style="font-size:medium"><span title="Call with Google Voice"><span title="Call with Google Voice"><span title="Call with Google Voice"><span title="Call with Google Voice">603-715-5470</span></span></span></span></span></div>
-<div style="text-align:center"><span style="font-size:medium">50 South State St.</span></div>
-<div style="text-align:center"><span style="font-size:medium">Concord, NH 03301</span></div>
-<div style="text-align:center"><br>
-
-<div style="text-align:center"><span style="font-size:medium">Coming Soon to Portsmouth, NH</span></div>
-<div style="text-align:center"><span style="font-size:medium"><a href="news.html">More details here</a></span></div>
-
-</div>
-
-<!-- Actual Content end -->
-
-<div><br>
-</div></div></td></tr></tbody></table>
-</div>
-</div>
-<div id="sites-canvas-bottom-panel">
-<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
-<div id="sites-attachments-container">
-</div>
-</div>
-</div>
-</td>
-</tr>
-</tbody></table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-    window.jstiming.load.tick('sjl');
-  </script>
-<script xmlns="http://www.w3.org/1999/xhtml" src="./home_files/jot_min_view__en.js"></script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-    window.jstiming.load.tick('jl');
-  </script>
-<script xmlns="http://www.w3.org/1999/xhtml">
-
-          sites.core.Analytics.createTracker();
-          sites.core.Analytics.trackPageview();
-
-    </script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
-    </script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
-            JOT_setupNav("2bd", "Navigation", true);
-            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
-          </script>
-<script xmlns="http://www.w3.org/1999/xhtml">
-                    window.onload = function() {
-                      if (false) {
-                        JOT_setMobilePreview();
-                      }
-                      var loadTimer = window.jstiming.load;
-                      loadTimer.tick("ol");
-                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
-                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
-                    }
-                  </script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-        JOT_insertAnalyticsCode(false,
-            false);
-      </script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
-        webspace, "en");
-    maestroRunner.initListeners();
-    maestroRunner.installEditRender();
-  </script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
-  //<![CDATA[
-    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
-    if (webspace.user.hasWriteAccess) {
-      JOT_decorateButtons();
-    }
-
-    // Fires delayed events.
-    (function() {
-      JOT_fullyLoaded = true;
-      var delayedEvents = JOT_delayedEvents;
-      for (var x = 0; x < delayedEvents.length; x++) {
-        var event = delayedEvents[x];
-        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
-      }
-      JOT_delayedEvents = null;
-      JOT_postEvent('pageLoaded');
-    })();
-  //]]>
-</script>
-<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
-    JOT_postEvent('decorateGvizCharts');
-  </script>
-<script type="text/javascript">
-          JOT_setupPostRenderingManager();
-        </script>
-<script type="text/javascript">
-          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
-        </script>
-<div id="server-timer-div" style="display:none"> </div>
-<script type="text/javascript">
-          window.jstiming.load.tick('render');
-          JOT_postEvent('usercontentrendered', this);
-        </script>
-
-</body></html>
+</html>
