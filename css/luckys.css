@@ -7,6 +7,9 @@
   margin: 0 0 0 0px;
 }
 
+.uk-container {
+  padding: 0 0px;
+}
 /*
  * Fix for sticky menu hiding content on anchor navigation
 */
