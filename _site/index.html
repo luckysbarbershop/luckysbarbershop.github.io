@@ -30,7 +30,10 @@
 
     <div class="uk-container uk-container-center">
 
-      <nav class="uk-navbar" data-uk-sticky="{boundary:'#define-an-offset'}" style="margin: 0px;">
+      <!-- WARNING - the two menus should MATCH -->
+
+<!-- First section shows on wide screens/computers -->
+<nav class="uk-navbar" data-uk-sticky="{boundary:'#define-an-offset'}" style="margin: 0px;">
     <a class="uk-navbar-brand uk-hidden-small" href="http://luckysbarbershop.biz">Lucky's</a>
     <ul class="uk-navbar-nav uk-hidden-small">
         <li class="uk-active"><a href="#home">Home</a></li>
@@ -45,15 +48,28 @@
 
 </nav>
 
+<!-- Second section shows on mobile screens -->
+<div id="offcanvas" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav uk-nav-offcanvas" data-uk-nav=''>
+      <li><a href="#home" onclick="jQuery.UIkit.offcanvas.hide(force=true);">TEST Home</a></li>
+      <li><a href="#concord" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Concord</a></li>
+      <li><a href="#portsmouth" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Portsmouth</a></li>
+      <li><a href="#barbers" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Barbers</a></li>
+      <li><a href="#schedule" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Schedule</a></li>
+    </ul>
+  </div>
+</div>
+
 
       <div class="anchor uk-margin uk-width-2-3 uk-container-center uk-text-center" id="home">
     <img style="background: black;" src="pix/header.jpg" alt="Lucky's Barbershop & Shave Parlor">
 </div>
 
 <div class="uk-marin uk-width-1-1 uk-container-center uk-text-center">
-    <a class="uk-button uk-button-large" href="#concord">Concord, NH (50 So State St)</a>
+    <a class="uk-button uk-button-large front-button" href="#concord">Concord, NH (50 So State St)</a>
     <br>
-    <a class="uk-margin uk-button uk-button-large" href="#portsmouth">Portsmouth, NH (801 Islington St)</a>
+    <a class="uk-margin uk-button uk-button-large front-button" href="#portsmouth">Portsmouth, NH (801 Islington St)</a>
 </div>
 
 <div class="uk-grid uk-panel-box" id="bio">
@@ -234,7 +250,7 @@
 
 </script>
 
-      <div id="offcanvas" class="uk-offcanvas">
+      <!-- <div id="offcanvas" class="uk-offcanvas">
   <div class="uk-offcanvas-bar">
     <ul class="uk-nav uk-nav-offcanvas" data-uk-nav=''>
       <li><a href="#home" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Home</a></li>
@@ -245,7 +261,7 @@
     </ul>
   </div>
 </div>
-
+ -->
     </div>
 </body>
 </html>

@@ -1,3 +1,6 @@
+<!-- WARNING - the two menus should MATCH -->
+
+<!-- First section shows on wide screens/computers -->
 <nav class="uk-navbar" data-uk-sticky="{boundary:'#define-an-offset'}" style="margin: 0px;">
     <a class="uk-navbar-brand uk-hidden-small" href="http://luckysbarbershop.biz">Lucky's</a>
     <ul class="uk-navbar-nav uk-hidden-small">
@@ -12,3 +15,16 @@
     <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Lucky's</div>
 
 </nav>
+
+<!-- Second section shows on mobile screens -->
+<div id="offcanvas" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav uk-nav-offcanvas" data-uk-nav=''>
+      <li><a href="#home" onclick="jQuery.UIkit.offcanvas.hide(force=true);">TEST Home</a></li>
+      <li><a href="#concord" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Concord</a></li>
+      <li><a href="#portsmouth" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Portsmouth</a></li>
+      <li><a href="#barbers" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Barbers</a></li>
+      <li><a href="#schedule" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Schedule</a></li>
+    </ul>
+  </div>
+</div>
