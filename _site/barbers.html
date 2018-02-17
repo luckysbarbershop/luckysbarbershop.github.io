@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucky's | Barbers</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/components/slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/components/sticky.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/slider.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/slidenav.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/sticky.min.css" />
+
+    <link rel="stylesheet" href="css/luckys.css" />
+
+    <link rel="shortcut icon" href="pix/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="pix/favicon.png">
+
+</head>
+
+<body style="background-color: #151518;">
+<div class="uk-container uk-container-center">
+<!-- WARNING - the two menus should MATCH -->
+
+<!-- First section shows on wide screens/computers -->
+<nav class="uk-navbar" data-uk-sticky="{boundary:'#define-an-offset'}" style="margin: 0px;">
+    <a class="uk-navbar-brand uk-hidden-small" href="http://luckysbarbershop.biz">Lucky's</a>
+    <ul class="uk-navbar-nav uk-hidden-small">
+        <li class="uk-active"><a href="/">Home</a></li>
+        <li><a href="/#concord">Concord</a></li>
+        <li><a href="/#portsmouth">Portsmouth</a></li>
+        <li><a href="/barbers.html">Barbers</a></li>
+        <li><a href="/#schedule">Schedule</a></li>
+    </ul>
+
+    <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
+    <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Lucky's</div>
+
+</nav>
+
+<!-- Second section shows on mobile screens -->
+<div id="offcanvas" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav uk-nav-offcanvas" data-uk-nav=''>
+      <li><a href="index.html" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Home</a></li>
+      <li><a href="/#concord" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Concord</a></li>
+      <li><a href="/#portsmouth" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Portsmouth</a></li>
+      <li><a href="/barbers.html" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Barbers</a></li>
+      <li><a href="/#schedule" onclick="jQuery.UIkit.offcanvas.hide(force=true);">Schedule</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- Page content goes here -->
+<div class="uk-grid uk-panel-box" id="barbers" >
+
+  <h1 class="uk-width-1-1">Barbers</h1>
+
+  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/craggy.jpg"> </div>
+  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/ken.jpg"> </div>
+  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/james.jpg"> </div>
+  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/tony.jpg"> </div>
+  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/chilly.jpg"> </div>
+  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/robie.jpg"> </div>
+  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/colin.jpg"> </div>
+  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/t-wood.jpg"> </div>
+
+</div>
+
+<div class="uk-grid uk-panel-box tm-footer">
+
+  <div class="uk-width-large-1-3 uk-width-small-1-1">
+    <i class="uk-icon-button uk-icon-medium uk-icon-map-marker"></i>
+    <a href="https://www.google.com/maps/place/Luckys+Barbershop/@43.2000938,-71.5352785">
+      50 South State St. Concord, NH 03301
+    </a>
+  </div>
+
+  <div class="uk-width-large-1-3 uk-width-small-1-1">
+    <i class="uk-icon-button uk-icon-medium uk-icon-map-marker"></i>
+    <a href="https://www.google.com/maps/place/PAPA+WOLF+SUPPLY+CO./@43.068953,-70.7725561,15z/data=!4m5!3m4!1s0x0:0x29b92345a0dc16d3!8m2!3d43.0690933!4d-70.7730596!6m1!1e1">
+      801 Islington St #28, Portsmouth, NH 03801
+    </a>
+  </div>
+
+  <div class="uk-width-large-1-3 uk-width-small-1-1">
+    <i class="uk-icon-button uk-icon-medium uk-icon-phone"></i> 603-715-5470
+  </div>
+    <div class="uk-width-large-1-3 uk-width-small-1-1">
+    <a href="https://www.facebook.com/luckysbarbershopandshaveparlor">
+      <i class="uk-icon-button uk-icon-medium uk-icon-facebook"></i>
+    </a>
+
+    <a href="https://www.instagram.com/luckysbarbershop/">
+      <i class="uk-icon-button uk-icon-medium uk-icon-instagram"></i>
+    </a>
+  </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10607192-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</div>
+</body>
+</html>
+
