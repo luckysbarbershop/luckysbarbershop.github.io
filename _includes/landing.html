@@ -124,39 +124,9 @@
           for holiday scheduling
         </div>
 
-        <table class="uk-table">
-            <caption>Concord Hours</caption>
-            <tbody>
-                <tr>
-                    <td>Monday</td>
-                    <td>7am - 7pm</td>
-                </tr>
-                <tr>
-                    <td>Tuesday</td>
-                    <td>7am - 7pm</td>
-                </tr>
-                <tr>
-                    <td>Wednesday</td>
-                    <td>7am - 7pm</td>
-                </tr>
-                <tr>
-                    <td>Thursday</td>
-                    <td>7am - 7pm</td>
-                </tr>
-                <tr>
-                    <td>Friday</td>
-                    <td>7am - 7pm</td>
-                </tr>
-                <tr>
-                    <td>Saturday</td>
-                    <td>7am - 2pm</td>
-                </tr>
-                <tr>
-                    <td>Sunday</td>
-                    <td>9am - 2pm</td>
-                </tr>
-            </tbody>
-        </table>
+        {% capture my_include %}{% include hours.md %}{% endcapture %}
+        {{ my_include | markdownify }}
+
         <h2>Portsmouth</h2> Lucky's Portsmouth is appointment only.
         <a class="uk-button" href="http://luckysbarbershop.appointy.com/">Schedule an Appointment</a>
         </p>
