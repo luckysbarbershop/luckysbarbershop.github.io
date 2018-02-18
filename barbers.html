@@ -8,14 +8,13 @@ title: "Lucky's | Barbers"
 
   <h1 class="uk-width-1-1">Barbers</h1>
 
-  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/craggy.jpg"> </div>
-  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/ken.jpg"> </div>
-  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/james.jpg"> </div>
-  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/tony.jpg"> </div>
-  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/chilly.jpg"> </div>
-  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/robie.jpg"> </div>
-  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/colin.jpg"> </div>
-  <div class="uk-width-large-1-3 uk-margin"> <img  src="pix/barbers/t-wood.jpg"> </div>
+  <!-- playing with blog post barbers -->
+  {% for barber in site.categories.barber reversed%}
+  <div class="uk-width-large-1-4 uk-margin"> <img src="{{ barber.img }}"> </div>
+  <div class="uk-width-large-1-4 uk-margin"> {{ barber.content | markdownify  }} </div>
+  {% endfor %}
+
+  <div class="uk-width-large-1-4 uk-margin"> <img src="pix/barbers/colin.jpg"> </div>
 
 </div>
 
