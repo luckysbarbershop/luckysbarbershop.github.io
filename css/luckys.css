@@ -19,3 +19,28 @@
 .front-button { width: 280px; }
 
 .nav-font { font-size: 20px !important; }
+
+
+/* Nathan Lam
+   June 2, 2017
+
+   Add this css for responsive embedded videos in your .css file. */
+.home-video-container{
+	max-width:600px;
+	margin:0 auto;
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
