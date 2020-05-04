@@ -1,5 +1,5 @@
 ## Concord Hours
-Lucky's Concord is currently first-come first-serve walkin service.
+Lucky's Concord is currently only accepting appointments due to state wide regulations with COVID-19.
 * Monday 7am-7pm
 * Tuesday 7am - 7pm
 * Wednesday 7am - 7pm
